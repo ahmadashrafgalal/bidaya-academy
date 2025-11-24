@@ -548,7 +548,7 @@ export default function Home() {
             {/* Contact Info */}
             <div className="space-y-6">
               <Card className="border-r-4 border-orange-500">
-                <CardContent className="pt-6">
+                <CardContent>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-orange-500" />
@@ -562,7 +562,7 @@ export default function Home() {
               </Card>
 
               <Card className="border-r-4 border-amber-600">
-                <CardContent className="pt-6">
+                <CardContent>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-amber-600" />
@@ -591,7 +591,7 @@ export default function Home() {
               </Card> */}
 
               <Card className="bg-gradient-to-br from-orange-500 to-orange-700 text-white">
-                <CardContent className="pt-6">
+                <CardContent>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                       <MessageCircle className="w-6 h-6 text-white" />
