@@ -36,7 +36,7 @@ export default function Home() {
               <img 
                 src="/bedaya.jpeg" 
                 alt="Bedaya" 
-                className="w-8 h-8 rounded-xl object-cover"
+                className="w-12 h-12 rounded-xl object-cover"
               />
               <span className="text-xl font-bold text-orange-700">أكاديمية بداية</span>
             </div>
@@ -635,9 +635,11 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-white" />
-                </div>
+                <img 
+                  src="/bedaya.jpeg" 
+                  alt="Bedaya" 
+                  className="w-12 h-12 rounded-xl object-cover"
+                />
                 <span className="text-xl font-bold">أكاديمية بداية</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
