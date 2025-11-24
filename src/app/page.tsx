@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-emerald-700 rounded-lg flex items-center justify-center">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
               <span className="text-xl font-bold text-emerald-700">أكاديمية بداية</span>
@@ -41,15 +41,15 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-6">
-              <a href="#home" className="text-gray-700 hover:text-emerald-600 transition-colors">الرئيسية</a>
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">عن الأكاديمية</a>
-              <a href="#programs" className="text-gray-700 hover:text-emerald-600 transition-colors">البرامج</a>
-              <a href="#gallery" className="text-gray-700 hover:text-emerald-600 transition-colors">المعرض</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-emerald-600 transition-colors">آراء الطلاب</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">التواصل</a>
+              <a href="#home" className="text-gray-700 hover:text-orange-500 transition-colors">الرئيسية</a>
+              <a href="#about" className="text-gray-700 hover:text-orange-500 transition-colors">عن الأكاديمية</a>
+              <a href="#programs" className="text-gray-700 hover:text-orange-500 transition-colors">البرامج</a>
+              <a href="#gallery" className="text-gray-700 hover:text-orange-500 transition-colors">المعرض</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-orange-500 transition-colors">آراء الطلاب</a>
+              <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors">التواصل</a>
             </div>
 
-            <Button className="hidden md:flex bg-emerald-600 hover:bg-emerald-700">
+            <Button className="hidden md:flex bg-orange-500 hover:bg-emerald-700">
               <a href="#contact">سجل الآن</a>
             </Button>
 
@@ -65,13 +65,13 @@ export default function Home() {
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden py-4 space-y-2">
-              <a href="#home" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>الرئيسية</a>
-              <a href="#about" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>عن الأكاديمية</a>
-              <a href="#programs" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>البرامج</a>
-              <a href="#gallery" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>المعرض</a>
-              <a href="#testimonials" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>آراء الطلاب</a>
-              <a href="#contact" className="block py-2 text-gray-700 hover:text-emerald-600" onClick={() => setMobileMenuOpen(false)}>التواصل</a>
-              <Button className="w-full bg-emerald-600 hover:bg-emerald-700 mt-2">
+              <a href="#home" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>الرئيسية</a>
+              <a href="#about" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>عن الأكاديمية</a>
+              <a href="#programs" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>البرامج</a>
+              <a href="#gallery" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>المعرض</a>
+              <a href="#testimonials" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>آراء الطلاب</a>
+              <a href="#contact" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>التواصل</a>
+              <Button className="w-full bg-orange-500 hover:bg-emerald-700 mt-2">
                 <a href="#contact">سجل الآن</a>
               </Button>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               أكاديمية بداية
               <br />
-              <span className="text-emerald-600">لتحفيظ القرآن الكريم</span>
+              <span className="text-orange-500">لتحفيظ القرآن الكريم</span>
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -100,10 +100,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-6">
+              <Button size="lg" className="bg-orange-500 hover:bg-emerald-700 text-lg px-8 py-6">
                 <a href="#contact">ابدأ رحلتك الآن</a>
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 text-lg px-8 py-6">
+              <Button size="lg" variant="outline" className="border-2 border-orange-500 text-orange-500 hover:bg-emerald-50 text-lg px-8 py-6">
                 <MessageCircle className="ml-2 w-5 h-5" />
                 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
               </Button>
@@ -111,7 +111,7 @@ export default function Home() {
 
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-                <Users className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                <Users className="w-12 h-12 text-orange-500 mx-auto mb-3" />
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">500+</h3>
                 <p className="text-gray-600">طالب وطالبة</p>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 <p className="text-gray-600">معلم متخصص</p>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-                <BookOpen className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                <BookOpen className="w-12 h-12 text-orange-500 mx-auto mb-3" />
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">10+</h3>
                 <p className="text-gray-600">سنوات من الخبرة</p>
               </div>
@@ -135,7 +135,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">عن الأكاديمية</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-amber-600 mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -148,19 +148,19 @@ export default function Home() {
               <h3 className="text-3xl font-bold text-gray-900 mb-6 mt-8">رسالتنا</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <span className="text-gray-700">تحفيظ القرآن الكريم بطريقة علمية منظمة</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <span className="text-gray-700">تعليم أحكام التجويد والقراءة الصحيحة</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <span className="text-gray-700">غرس حب القرآن في نفوس النشء</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <span className="text-gray-700">توفير بيئة تعليمية محفزة ومشجعة</span>
                 </li>
               </ul>
@@ -176,7 +176,7 @@ export default function Home() {
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">الشيخ عبد الله جلال</h3>
-                <p className="text-emerald-600 font-semibold mb-4">مؤسس ومشرف الأكاديمية</p>
+                <p className="text-orange-500 font-semibold mb-4">مؤسس ومشرف الأكاديمية</p>
                 <p className="text-gray-700 leading-relaxed">
                   حاصل على إجازة في القرآن الكريم برواية حفص عن عاصم، وله خبرة تزيد عن 15 عاماً في تحفيظ القرآن وتعليم أحكام التجويد. خريج كلية الشريعة والدراسات الإسلامية، وقد قام بتخريج المئات من حفظة كتاب الله.
                 </p>
@@ -192,14 +192,14 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">برامجنا وخططنا</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">نوفر برامج متنوعة تناسب جميع الفئات العمرية والمستويات</p>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-amber-600 mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="border-t-4 border-emerald-600 hover:shadow-xl transition-shadow">
+            <Card className="border-t-4 border-orange-500 hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                  <BookOpen className="w-8 h-8 text-emerald-600" />
+                  <BookOpen className="w-8 h-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-2xl">برنامج الحفظ المتقن</CardTitle>
                 <CardDescription className="text-base">للأطفال والكبار</CardDescription>
@@ -207,19 +207,19 @@ export default function Home() {
               <CardContent>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                     <span>حفظ القرآن كاملاً أو أجزاء منه</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                     <span>مراجعة دورية منتظمة</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                     <span>متابعة فردية مع كل طالب</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                     <span>شهادات معتمدة عند الإتمام</span>
                   </li>
                 </ul>
@@ -299,7 +299,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-2xl p-8 md:p-12 text-center">
+          <div className="bg-gradient-to-r from-orange-500 to-emerald-700 text-white rounded-2xl p-8 md:p-12 text-center">
             <h3 className="text-3xl font-bold mb-4">عرض خاص للمجموعات العائلية</h3>
             <p className="text-xl mb-6 opacity-90">خصم 20% عند تسجيل 3 أفراد أو أكثر من نفس العائلة</p>
             <Button size="lg" variant="secondary" className="bg-white text-emerald-700 hover:bg-gray-100">
@@ -315,7 +315,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">معرض الصور</h2>
             <p className="text-xl text-gray-600">لمحات من أنشطتنا وفعالياتنا</p>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-amber-600 mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -400,7 +400,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">آراء طلابنا وأولياء الأمور</h2>
             <p className="text-xl text-gray-600">ما يقوله من درس معنا</p>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-amber-600 mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -479,7 +479,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
             <p className="text-xl text-gray-600">نسعد بتواصلك معنا</p>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-amber-600 mx-auto mt-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -535,7 +535,7 @@ export default function Home() {
                         required
                       />
                     </div>
-                    <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                    <Button type="submit" className="w-full bg-orange-500 hover:bg-emerald-700">
                       إرسال الطلب
                     </Button>
                   </form>
@@ -545,16 +545,15 @@ export default function Home() {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="border-r-4 border-emerald-600">
+              <Card className="border-r-4 border-orange-500">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-emerald-600" />
+                      <Phone className="w-6 h-6 text-orange-500" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-2">الهاتف</h3>
-                      <p className="text-gray-600 text-lg" dir="ltr">+966 50 123 4567</p>
-                      <p className="text-gray-600 text-lg" dir="ltr">+966 50 765 4321</p>
+                      <p className="text-gray-600 text-lg" dir="ltr">01025197043</p>
                     </div>
                   </div>
                 </CardContent>
@@ -569,7 +568,6 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">البريد الإلكتروني</h3>
                       <p className="text-gray-600">info@bidaya-academy.com</p>
-                      <p className="text-gray-600">contact@bidaya-academy.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -590,7 +588,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-emerald-600 to-emerald-700 text-white">
+              <Card className="bg-gradient-to-br from-orange-500 to-emerald-700 text-white">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
@@ -635,7 +633,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-emerald-700 rounded-lg flex items-center justify-center">
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xl font-bold">أكاديمية بداية</span>
