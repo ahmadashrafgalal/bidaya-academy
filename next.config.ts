@@ -16,7 +16,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
+  // خففنا من outputFileTracingRoot عشان المسار يبقى جوه المشروع مباشرة
+  outputFileTracingRoot: path.resolve(__dirname),
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -26,10 +27,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       "*.{jsx,tsx}": {
-        loaders: [LOADER]
-      }
-    }
-  }
+        loaders: [LOADER],
+      },
+    },
+  },
 };
 
 export default nextConfig;
