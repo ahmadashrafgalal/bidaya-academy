@@ -34,7 +34,11 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center">
-                <BookOpen className="w-6 h-6 text-white" />
+                <img 
+                  src="/bedaya.jpeg" 
+                  alt="Bedaya" 
+                  className="w-8 h-8 rounded-xl object-cover"
+                />
               </div>
               <span className="text-xl font-bold text-orange-700">أكاديمية بداية</span>
             </div>
