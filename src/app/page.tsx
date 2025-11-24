@@ -52,7 +52,7 @@ export default function Home() {
             </div>
 
             <Button className="hidden md:flex bg-orange-500 hover:bg-orange-700">
-              <a href="#contact">سجل الآن</a>
+              <a href="#contact">تواصل الآن</a>
             </Button>
 
             {/* Mobile Menu Button */}
@@ -74,7 +74,7 @@ export default function Home() {
               <a href="#testimonials" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>آراء الطلاب</a>
               <a href="#contact" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>التواصل</a>
               <Button className="w-full bg-orange-500 hover:bg-orange-700 mt-2">
-                <a href="#contact">سجل الآن</a>
+                <a href="#contact">تواصل الآن</a>
               </Button>
             </div>
           )}
@@ -107,7 +107,7 @@ export default function Home() {
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 text-lg px-8 py-6">
                 <MessageCircle className="ml-2 w-5 h-5" />
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
+                <a href="https://wa.me/201025197043" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
               </Button>
             </div>
 
@@ -614,6 +614,13 @@ export default function Home() {
                 <a href="https://www.facebook.com/share/1BUbLYv1DW/" className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 </a>
+                <a href="https://wa.me/201025197043" target="_blank" rel="noopener noreferrer"
+                  className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white hover:bg-green-600 transition-colors">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.04L2 22l5.09-1.33A10 10 0 1012.04 2zm5.52 14.62c-.23.65-1.34 1.24-1.85 1.32-.47.07-1.05.1-1.7-.11-.39-.13-.9-.29-1.55-.57-2.73-1.18-4.51-3.9-4.64-4.09-.13-.18-1.11-1.47-1.11-2.81 0-1.34.7-2 1-2.28.23-.24.62-.35 1-.35.12 0 .23.01.33.01.29.02.44.03.64.5.23.55.78 1.91.85 2.05.07.13.12.28.02.46-.09.18-.14.28-.28.44-.13.15-.28.34-.4.46-.13.13-.26.27-.11.52.15.24.66 1.09 1.42 1.76 1 0.89 1.85 1.16 2.11 1.29.26.13.41.11.56-.06.15-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.52.72 1.78.85.26.13.44.19.5.3.06.11.06.66-.17 1.31z"/>
+                  </svg>
+                </a>
+
                 {/* <a href="#" className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
                 </a>
