@@ -28,7 +28,7 @@ export default function AhadithPage() {
               className="cursor-pointer flex justify-between items-center"
             >
               <h2 className="text-lg md:text-xl font-semibold text-right text-gray-800">
-                س{hadith.id}: {hadith.title}
+                {hadith.title}
               </h2>
               <span className="text-orange-500 font-bold">
                 {openId === hadith.id ? "-" : "+"}

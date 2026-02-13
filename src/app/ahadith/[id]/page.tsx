@@ -1,31 +1,49 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/router";
 import { ahadith } from "@/data/ahadith";
-import { notFound } from "next/navigation";
 
-interface Props {
-  params: { id: string };
-}
+export default function SingleHadithPage() {
+  const router = useRouter();
+  const { id } = router.query;
+  const hadith = ahadith.find((h) => h.id === Number(id));
 
-export default function HadithDetails({ params }: Props) {
-  const hadith = ahadith.find(
-    (h) => h.id === Number(params.id)
-  );
-
-  if (!hadith) return notFound();
+  if (!hadith) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-center p-6">
+        <h1 className="text-2xl text-gray-700">الحديث غير موجود</h1>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 text-right">
-      <h1 className="text-2xl font-bold mb-6">
-        س{hadith.id}: {hadith.title}
+    <div className="min-h-screen bg-white p-6 md:p-12 flex flex-col items-center">
+      {/* عنوان الحديث */}
+      <h1 className="text-4xl md:text-5xl font-bold mb-8 text-right text-orange-600 w-full">
+        {hadith.title}
       </h1>
 
-      <div className="bg-white p-6 rounded-xl shadow">
-        <p className="mb-6 text-lg">{hadith.content}</p>
+      {/* محتوى الحديث */}
+      <div className="bg-white w-full md:w-3/4 rounded-3xl shadow-lg border border-gray-200 p-8 flex flex-col gap-6">
+        <p className="text-right text-gray-700 leading-relaxed text-lg md:text-xl">
+          {hadith.content}
+        </p>
 
-        <audio
-          src={`/ahadith/${hadith.id}.mp3`}
-          controls
-          className="w-full"
-        />
+        {/* مشغل الصوت */}
+        {hadith.audio && (
+          <div className="flex justify-center mt-4">
+            <audio
+              controls
+              src={hadith.audio}
+              className="w-full md:w-2/3 rounded-xl border border-orange-300 shadow-md"
+            >
+              متصفحك لا يدعم عنصر الصوت.
+            </audio>
+          </div>
+        )}
+
+
       </div>
     </div>
   );
