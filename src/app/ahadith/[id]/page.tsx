@@ -32,6 +32,24 @@ export default function HadithDetails({ params }: Props) {
           className="w-full rounded-xl"
         />
 
+       {/* كارت الصوت دايمًا ظاهر */}
+        <div className="flex justify-center mt-4 w-full">
+          <div className="w-full md:w-2/3 bg-orange-50 border border-orange-300 rounded-2xl shadow-md p-4 flex items-center justify-center">
+            {hadith.audio ? (
+              <audio
+                controls
+                src={hadith.audio}
+                className="w-full rounded-xl"
+              >
+                متصفحك لا يدعم عنصر الصوت.
+              </audio>
+            ) : (
+              <p className="text-orange-500 text-center font-semibold">
+                لا يوجد ملف صوتي لهذا الحديث
+              </p>
+            )}
+          </div>
+        </div>
     
       </div>
     </div>
