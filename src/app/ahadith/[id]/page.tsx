@@ -25,19 +25,12 @@ export default function HadithDetails({ params }: Props) {
         </p>
 
         {/* مشغل الصوت */}
-        {hadith.audio && (
-        <div className="flex justify-center mt-4 w-full">
-            <div className="w-full md:w-2/3 bg-orange-50 border border-orange-300 rounded-2xl shadow-md p-4 flex items-center justify-center">
-            <audio
-                controls
-                src={`/ahadith/${hadith.id}.mp3`}
-                className="w-full rounded-xl"
-            >
-                متصفحك لا يدعم عنصر الصوت.
-            </audio>
-            </div>
-        </div>
-        )}
+
+        <audio
+          src={`/ahadith/${hadith.id}.mp3`}
+          controls
+          className="w-full rounded-xl"
+        />
 
     
       </div>
