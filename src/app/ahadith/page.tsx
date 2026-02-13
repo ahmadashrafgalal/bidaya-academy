@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ahadith } from "../../data/ahadith";
-
+import { ahadith } from "@/data/ahadith";
 export default function AhadithPage() {
   const [openId, setOpenId] = useState<number | null>(null);
 

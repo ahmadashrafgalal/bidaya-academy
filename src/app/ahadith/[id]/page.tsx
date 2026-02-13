@@ -1,4 +1,4 @@
-import { ahadith } from "../../../data/ahadith";
+import { ahadith } from "@/data/ahadith";
 import { notFound } from "next/navigation";
 
 interface Props {
