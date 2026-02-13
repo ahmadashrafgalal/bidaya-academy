@@ -1,13 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { ahadith } from "@/data/ahadith";
 
 export default function SingleHadithPage() {
   const router = useRouter();
-  const { id } = router.query;
-  const hadith = ahadith.find((h) => h.id === Number(id));
+  const [hadith, setHadith] = useState<any>(null);
+
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    const found = ahadith.find((h) => h.id === Number(router.query.id));
+    setHadith(found);
+  }, [router.isReady, router.query.id]);
+
+  if (!router.isReady) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-gray-700">
+        <p className="text-xl">جارٍ التحميل...</p>
+      </div>
+    );
+  }
 
   if (!hadith) {
     return (
@@ -42,7 +56,6 @@ export default function SingleHadithPage() {
             </audio>
           </div>
         )}
-
 
       </div>
     </div>
