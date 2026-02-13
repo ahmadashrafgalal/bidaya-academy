@@ -28,11 +28,6 @@ export default function AhadithPage() {
                 س{hadith.id}: {hadith.title}
               </h2>
 
-              <audio
-                src={`/ahadith/${hadith.id}.mp3`}
-                controls
-                className="w-32"
-              />
             </div>
 
             {openId === hadith.id && (
