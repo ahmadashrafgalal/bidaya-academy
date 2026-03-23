@@ -46,7 +46,7 @@ export default function Home() {
               <a href="#home" className="text-gray-700 hover:text-orange-500 transition-colors">الرئيسية</a>
               <a href="#about" className="text-gray-700 hover:text-orange-500 transition-colors">عن الأكاديمية</a>
               <a href="#programs" className="text-gray-700 hover:text-orange-500 transition-colors">البرامج</a>
-              <a href="#gallery" className="text-gray-700 hover:text-orange-500 transition-colors">الأقسام التعليمية</a>
+              <a href="#categories" className="text-gray-700 hover:text-orange-500 transition-colors">الأقسام التعليمية</a>
               <a href="#testimonials" className="text-gray-700 hover:text-orange-500 transition-colors">آراء الطلاب</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors">التواصل</a>
             </div>
