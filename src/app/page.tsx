@@ -312,60 +312,77 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="sections" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          
-          {/* Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              الأقسام التعليمية
-            </h2>
-            <p className="text-xl text-gray-600">
-              اختر القسم اللي تحب تبدأ بيه
-            </p>
-            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
-          </div>
+<section id="sections" className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4">
+    
+    {/* Title */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        الأقسام التعليمية
+      </h2>
+      <p className="text-xl text-gray-600">
+        اختر القسم اللي تحب تبدأ بيه
+      </p>
+      <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
+    </div>
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-            {/* Aqeedah */}
-            <a
-              href="https://kids.islamenc.com/ar/browse/category/10"
-              className="relative h-64 rounded-2xl overflow-hidden group shadow-lg"
-            >
-              <img
-                src="https://kids.islamenc.com/assets/imgs/logos/aqeeda.png"
-                alt="قسم العقيدة"
-                className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition duration-300"
-              />
+      {/* Aqeedah */}
+      <a
+        href="/aqeeda"
+        className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center"
+      >
+        {/* SVG Icon */}
+        <svg
+          className="w-24 h-24 text-orange-500 group-hover:scale-110 transition duration-300"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"
+          />
+        </svg>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-                <p className="text-orange-400 font-bold text-lg">تصفح</p>
-                <p className="text-white text-2xl font-semibold">قسم العقيدة</p>
-              </div>
-            </a>
-
-            {/* Hadeeth */}
-            <a
-              href="https://kids.islamenc.com/ar/browse/category/50"
-              className="relative h-64 rounded-2xl overflow-hidden group shadow-lg"
-            >
-              <img
-                src="https://kids.islamenc.com/assets/imgs/logos/hadeeth.png"
-                alt="قسم الحديث"
-                className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition duration-300"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-                <p className="text-orange-400 font-bold text-lg">تصفح</p>
-                <p className="text-white text-2xl font-semibold">قسم الحديث</p>
-              </div>
-            </a>
-
-          </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <p className="text-orange-400 font-bold text-lg">تصفح</p>
+          <p className="text-white text-2xl font-semibold">قسم العقيدة</p>
         </div>
-      </section>
+      </a>
+
+      {/* Hadeeth */}
+      <a
+        href="/ahadith"
+        className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center"
+      >
+        {/* SVG Icon */}
+        <svg
+          className="w-24 h-24 text-amber-600 group-hover:scale-110 transition duration-300"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M4 6h16M4 10h16M4 14h10M4 18h8"
+          />
+        </svg>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <p className="text-orange-400 font-bold text-lg">تصفح</p>
+          <p className="text-white text-2xl font-semibold">قسم الحديث</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
