@@ -312,86 +312,57 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20 bg-white">
+      <section id="sections" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
+          
+          {/* Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">معرض الصور</h2>
-            <p className="text-xl text-gray-600">لمحات من أنشطتنا وفعالياتنا</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              الأقسام التعليمية
+            </h2>
+            <p className="text-xl text-gray-600">
+              اختر القسم اللي تحب تبدأ بيه
+            </p>
             <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=600&h=400&fit=crop"
-                alt="طلاب يتعلمون القرآن"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">حلقات التحفيظ</p>
-              </div>
-            </div>
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=600&h=400&fit=crop"
-                alt="معلم مع طلاب"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+            {/* Aqeedah */}
+            <a
+              href="https://kids.islamenc.com/ar/browse/category/10"
+              className="relative h-64 rounded-2xl overflow-hidden group shadow-lg"
+            >
+              <img
+                src="https://kids.islamenc.com/assets/imgs/logos/aqeeda.png"
+                alt="قسم العقيدة"
+                className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">دروس التجويد</p>
-              </div>
-            </div>
 
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop"
-                alt="مكتبة الأكاديمية"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">مكتبة الأكاديمية</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                <p className="text-orange-400 font-bold text-lg">تصفح</p>
+                <p className="text-white text-2xl font-semibold">قسم العقيدة</p>
               </div>
-            </div>
+            </a>
 
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop"
-                alt="حفل التخرج"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+            {/* Hadeeth */}
+            <a
+              href="https://kids.islamenc.com/ar/browse/category/50"
+              className="relative h-64 rounded-2xl overflow-hidden group shadow-lg"
+            >
+              <img
+                src="https://kids.islamenc.com/assets/imgs/logos/hadeeth.png"
+                alt="قسم الحديث"
+                className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">حفل التخرج</p>
-              </div>
-            </div>
 
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop"
-                alt="قاعات الدراسة"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">قاعات الدراسة</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                <p className="text-orange-400 font-bold text-lg">تصفح</p>
+                <p className="text-white text-2xl font-semibold">قسم الحديث</p>
               </div>
-            </div>
+            </a>
 
-            <div className="relative h-64 rounded-xl overflow-hidden group">
-              <Image
-                src="https://images.unsplash.com/photo-1581579186913-45ac3e648364?w=600&h=400&fit=crop"
-                alt="الأنشطة الطلابية"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <p className="text-white font-semibold text-lg">الأنشطة الطلابية</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
