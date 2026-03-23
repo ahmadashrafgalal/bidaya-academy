@@ -46,7 +46,7 @@ export default function Home() {
               <a href="#home" className="text-gray-700 hover:text-orange-500 transition-colors">الرئيسية</a>
               <a href="#about" className="text-gray-700 hover:text-orange-500 transition-colors">عن الأكاديمية</a>
               <a href="#programs" className="text-gray-700 hover:text-orange-500 transition-colors">البرامج</a>
-              <a href="#gallery" className="text-gray-700 hover:text-orange-500 transition-colors">المعرض</a>
+              <a href="#gallery" className="text-gray-700 hover:text-orange-500 transition-colors">الأقسام التعليمية</a>
               <a href="#testimonials" className="text-gray-700 hover:text-orange-500 transition-colors">آراء الطلاب</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors">التواصل</a>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
               <a href="#home" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>الرئيسية</a>
               <a href="#about" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>عن الأكاديمية</a>
               <a href="#programs" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>البرامج</a>
-              <a href="#gallery" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>المعرض</a>
+              <a href="#categories" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>الأقسام التعليمية</a>
               <a href="#testimonials" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>آراء الطلاب</a>
               <a href="#contact" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>التواصل</a>
               <Button className="w-full bg-orange-500 hover:bg-orange-700 mt-2">
@@ -312,7 +312,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-<section id="sections" className="py-20 bg-gray-50">
+<section id="categories" className="py-20 bg-gray-50">
   <div className="container mx-auto px-4">
     
     {/* Title */}
@@ -320,9 +320,6 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-gray-900 mb-4">
         الأقسام التعليمية
       </h2>
-      <p className="text-xl text-gray-600">
-        اختر القسم اللي تحب تبدأ بيه
-      </p>
       <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
     </div>
 
