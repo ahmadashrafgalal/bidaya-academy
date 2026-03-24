@@ -372,7 +372,7 @@ export default function Home() {
         </div>
       </a>
 
-      {/* seera */}
+      {/* Seera */}
       <a
         href="/seera"
         className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center"
@@ -395,9 +395,33 @@ export default function Home() {
         </div>
       </a>
 
+      {/* Ad3eya & Azkar */}
+      <a
+        href="/azkar"
+        className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center"
+      >
+        <svg
+          className="w-24 h-24 text-green-600 group-hover:scale-110 transition duration-300"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <p className="text-orange-400 font-bold text-lg">تصفح</p>
+          <p className="text-white text-2xl font-semibold">قسم الأدعية والأذكار</p>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
+
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
