@@ -331,7 +331,6 @@ export default function Home() {
         href="/aqeeda"
         className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center"
       >
-        {/* SVG Icon */}
         <svg
           className="w-24 h-24 text-orange-500 group-hover:scale-110 transition duration-300"
           fill="none"
@@ -344,7 +343,6 @@ export default function Home() {
           />
         </svg>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
           <p className="text-orange-400 font-bold text-lg">تصفح</p>
           <p className="text-white text-2xl font-semibold">قسم العقيدة</p>
@@ -356,7 +354,6 @@ export default function Home() {
         href="/ahadith"
         className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center"
       >
-        {/* SVG Icon */}
         <svg
           className="w-24 h-24 text-amber-600 group-hover:scale-110 transition duration-300"
           fill="none"
@@ -369,17 +366,38 @@ export default function Home() {
           />
         </svg>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
           <p className="text-orange-400 font-bold text-lg">تصفح</p>
           <p className="text-white text-2xl font-semibold">قسم الحديث</p>
         </div>
       </a>
 
+      {/* seera */}
+      <a
+        href="/seera"
+        className="relative h-64 rounded-2xl overflow-hidden group shadow-lg bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center"
+      >
+        <svg
+          className="w-24 h-24 text-yellow-600 group-hover:scale-110 transition duration-300"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M12 6v6l4 2M12 2a10 10 0 100 20 10 10 0 000-20z"
+          />
+        </svg>
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <p className="text-orange-400 font-bold text-lg">تصفح</p>
+          <p className="text-white text-2xl font-semibold">قسم السيرة النبوية</p>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
-
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">

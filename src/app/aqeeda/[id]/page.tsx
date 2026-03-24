@@ -15,7 +15,7 @@ export default function aqDetails({ params }: Props) {
     <div className="min-h-screen bg-gray-100 p-6 md:p-12 flex flex-col items-center">
       {/* عنوان الحديث */}
       <h1 className="text-4xl md:text-5xl font-bold mb-8 text-right text-orange-600 w-full md:w-3/4">
-        س{aq.id}: {aq.title}
+         {aq.title}
       </h1>
 
       {/* محتوى الحديث */}
