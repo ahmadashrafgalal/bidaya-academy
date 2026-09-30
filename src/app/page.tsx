@@ -7,17 +7,41 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-import { Menu, X, BookOpen, Users, Award, Phone, Mail, MapPin, MessageCircle, Star, Check } from "lucide-react"
+import { Menu, X, BookOpen, Users, Award, Phone, Mail, MapPin, MessageCircle, Star, Check, ChevronDown, HelpCircle } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: ""
   })
+
+  const faqs = [
+    {
+      q: "ما هي أكاديمية بداية لتحفيظ القرآن الكريم؟",
+      a: "أكاديمية بداية هي صرح تعليمي قرآني رائد بإشراف الشيخ عبد الله جلال، يهدف إلى تحفيظ القرآن الكريم، وتعليم أحكام التجويد والقراءة الصحيحة، وتقديم مناهج متكاملة في العقيدة والحديث والسيرة النبوية والأذكار لمختلف الفئات العمرية."
+    },
+    {
+      q: "من هو المشرف العام على أكاديمية بداية؟",
+      a: "المشرف العام ومؤسس الأكاديمية هو فضيلة الشيخ عبد الله جلال، الحاصل على إجازة متصلة السند في القرآن الكريم برواية حفص عن عاصم، وخريج كلية الشريعة والدراسات الإسلامية بخبرة تتجاوز 15 عاماً في تحفيظ القرآن وتخريج الحفظة."
+    },
+    {
+      q: "هل توفر الأكاديمية تحفيظ القرآن أونلاين لجميع الدول؟",
+      a: "نعم، توفر أكاديمية بداية حلقات تحفيظ قرآن وتجويد أونلاين عبر الإنترنت بالصوت والصورة لجميع الطلاب من داخل مصر وخارجها، مع إمكانية تحديد المواعيد المناسبة لكل طالب."
+    },
+    {
+      q: "ما هي البرامج والدورات المتوفرة بالأكاديمية؟",
+      a: "نقدم برنامج الحفظ المتقن (للأطفال والكبار)، ودورة أحكام التجويد المخارج والصفات والمدود، والحلقات المسائية وتأسيس القراءة من الصفر، بالإضافة إلى دورات الإجازة بالسند المتصل وبرامج العلوم الشرعية."
+    },
+    {
+      q: "كيف يمكنني التسجيل والتواصل مع إدارة الأكاديمية؟",
+      a: "يمكنك التسجيل بسهولة عبر تعبئة نموذج التسجيل في هذا الموقع أو عبر التواصل الفوري عبر تطبيق واتساب على رقم: 01025197043 (+201025197043) وسيقوم فريق المتابعة بالتواصل معك مباشرة."
+    }
+  ]
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -35,7 +59,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <img 
                 src="/bedaya.jpeg" 
-                alt="Bedaya" 
+                alt="شعار أكاديمية بداية لتحفيظ القرآن الكريم - الشيخ عبد الله جلال" 
                 className="w-12 h-12 rounded-xl object-cover"
               />
               <span className="text-xl font-bold text-orange-700">أكاديمية بداية</span>
@@ -48,6 +72,7 @@ export default function Home() {
               <a href="#programs" className="text-gray-700 hover:text-orange-500 transition-colors">البرامج</a>
               <a href="#categories" className="text-gray-700 hover:text-orange-500 transition-colors">الأقسام التعليمية</a>
               <a href="#testimonials" className="text-gray-700 hover:text-orange-500 transition-colors">آراء الطلاب</a>
+              <a href="#faq" className="text-gray-700 hover:text-orange-500 transition-colors">الأسئلة الشائعة</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors">التواصل</a>
             </div>
 
@@ -72,6 +97,7 @@ export default function Home() {
               <a href="#programs" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>البرامج</a>
               <a href="#categories" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>الأقسام التعليمية</a>
               <a href="#testimonials" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>آراء الطلاب</a>
+              <a href="#faq" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>الأسئلة الشائعة</a>
               <a href="#contact" className="block py-2 text-gray-700 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>التواصل</a>
               <Button className="w-full bg-orange-500 hover:bg-orange-700 mt-2">
                 <a href="#contact">تواصل الآن</a>
@@ -172,7 +198,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-xl shadow-lg">
                 <Image
                   src="https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600&h=600&fit=crop"
-                  alt="الشيخ عبد الله جلال"
+                  alt="فضيلة الشيخ عبد الله جلال المشرف العام على أكاديمية بداية لتحفيظ القرآن الكريم"
                   width={400}
                   height={400}
                   className="w-full h-64 object-cover rounded-lg mb-6"
@@ -502,6 +528,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 bg-gray-50 border-t border-orange-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-600 mb-3">
+              <HelpCircle className="w-6 h-6" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">الأسئلة الشائعة</h2>
+            <p className="text-lg text-gray-600">إجابات شاملة عن كل ما يخص الدراسة والتسجيل في أكاديمية بداية</p>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full p-6 text-right flex items-center justify-between gap-4 font-semibold text-gray-800 hover:text-orange-600 transition-colors"
+                >
+                  <span className="text-lg">{faq.q}</span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-orange-500 transition-transform duration-300 flex-shrink-0 ${
+                      openFaq === index ? "transform rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-6 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-4 bg-orange-50/30">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact & Registration Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -671,13 +737,13 @@ export default function Home() {
               <div className="flex items-center gap-2 mb-4">
                 <img 
                   src="/bedaya.jpeg" 
-                  alt="Bedaya" 
+                  alt="شعار أكاديمية بداية لتحفيظ القرآن الكريم" 
                   className="w-12 h-12 rounded-xl object-cover"
                 />
                 <span className="text-xl font-bold">أكاديمية بداية</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                نساعدك على حفظ كتاب الله بطريقة علمية منظمة مع معلمين متخصصين
+                نساعدك على حفظ كتاب الله بطريقة علمية منظمة مع معلمين متخصصين بإشراف الشيخ عبد الله جلال.
               </p>
             </div>
 
@@ -687,34 +753,35 @@ export default function Home() {
                 <li><a href="#home" className="text-gray-400 hover:text-orange-400 transition-colors">الرئيسية</a></li>
                 <li><a href="#about" className="text-gray-400 hover:text-orange-400 transition-colors">عن الأكاديمية</a></li>
                 <li><a href="#programs" className="text-gray-400 hover:text-orange-400 transition-colors">البرامج</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-orange-400 transition-colors">التواصل</a></li>
+                <li><a href="#faq" className="text-gray-400 hover:text-orange-400 transition-colors">الأسئلة الشائعة</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-orange-400 transition-colors">التواصل والتسجيل</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">البرامج</h3>
+              <h3 className="text-lg font-semibold mb-4">الأقسام التعليمية</h3>
               <ul className="space-y-2">
-                <li><span className="text-gray-400">برنامج الحفظ المتقن</span></li>
-                <li><span className="text-gray-400">دورة التجويد</span></li>
-                <li><span className="text-gray-400">الحلقات المسائية</span></li>
-                <li><span className="text-gray-400">البرامج الخاصة</span></li>
+                <li><a href="/aqeeda" className="text-gray-400 hover:text-orange-400 transition-colors">قسم العقيدة الإسلامية</a></li>
+                <li><a href="/ahadith" className="text-gray-400 hover:text-orange-400 transition-colors">قسم الأحاديث النبوية</a></li>
+                <li><a href="/seera" className="text-gray-400 hover:text-orange-400 transition-colors">قسم السيرة النبوية</a></li>
+                <li><a href="/azkar" className="text-gray-400 hover:text-orange-400 transition-colors">قسم الأدعية والأذكار</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">أوقات العمل</h3>
+              <h3 className="text-lg font-semibold mb-4">أوقات العمل والتواصل</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>السبت - الخميس</li>
-                <li>8:00 ص - 9:00 م</li>
-                <li className="pt-2">الجمعة</li>
-                <li>4:00 م - 9:00 م</li>
+                <li>السبت - الخميس: 8:00 ص - 9:00 م</li>
+                <li>الجمعة: 4:00 م - 9:00 م</li>
+                <li className="pt-2 text-orange-400 font-semibold" dir="ltr">+20 102 519 7043</li>
+                <li className="text-gray-400">info@bidaya-academy.com</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>© 2024 أكاديمية بداية لتحفيظ القرآن الكريم. جميع الحقوق محفوظة.</p>
-            <p className="mt-2">بإشراف الشيخ عبد الله جلال</p>
+            <p>© {new Date().getFullYear()} أكاديمية بداية لتحفيظ القرآن الكريم. جميع الحقوق محفوظة.</p>
+            <p className="mt-2 text-orange-400">بإشراف فضيلة الشيخ عبد الله جلال</p>
           </div>
         </div>
       </footer>
