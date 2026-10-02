@@ -124,7 +124,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              نساعدك على حفظ كتاب الله بطريقة علمية منظمة مع معلمين متخصصين ومناهج معتمدة
+              أكاديمية بداية لتحفيظ القرآن الكريم وتعليم أحكام التجويد والعلوم الشرعية بإشراف فضيلة الشيخ عبد الله جلال. نساعدك ونساعد أطفالك على حفظ كتاب الله بطريقة علمية منظمة مع معلمين متخصصين ومناهج معتمدة.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -203,10 +203,10 @@ export default function Home() {
                   height={400}
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">الشيخ عبد الله جلال</h3>
-                <p className="text-orange-500 font-semibold mb-4">مؤسس ومشرف الأكاديمية</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">فضيلة الشيخ عبد الله جلال (الشيخ عبدالله جلال)</h3>
+                <p className="text-orange-500 font-semibold mb-4">المشرف العام ومؤسس أكاديمية بداية</p>
                 <p className="text-gray-700 leading-relaxed">
-                  حاصل على إجازة في القرآن الكريم برواية حفص عن عاصم، وله خبرة تزيد عن 15 عاماً في تحفيظ القرآن وتعليم أحكام التجويد. خريج كلية الشريعة والدراسات الإسلامية، وقد قام بتخريج المئات من حفظة كتاب الله.
+                  حاصل على إجازة في القرآن الكريم برواية حفص عن عاصم بالسند المتصل، وله خبرة تزيد عن 15 عاماً في تحفيظ القرآن الكريم وتعليم أحكام التجويد والقراءات. خريج كلية الشريعة والدراسات الإسلامية، وقام بالإشراف على تحفيظ وتخريج المئات من حفظة كتاب الله تعالى.
                 </p>
               </div>
             </div>

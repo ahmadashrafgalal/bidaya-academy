@@ -16,11 +16,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "أكاديمية بداية لتحفيظ القرآن الكريم | بإشراف الشيخ عبد الله جلال",
-    template: "%s | أكاديمية بداية لتحفيظ القرآن الكريم",
+    default: "أكاديمية بداية لتحفيظ القرآن الكريم | الشيخ عبد الله جلال",
+    template: "%s | أكاديمية بداية",
   },
   description:
-    "أكاديمية بداية لتحفيظ القرآن الكريم وتعليم أحكام التجويد والعلوم الشرعية بإشراف الشيخ عبد الله جلال. دورات تحفيظ قرآن متقن للأطفال والكبار، إجازات قرآنية، أحاديث، عقيدة، سيرة وأذكار.",
+    "أكاديمية بداية لتحفيظ القرآن الكريم وتعليم أحكام التجويد والعلوم الشرعية بإشراف فضيلة الشيخ عبد الله جلال. دورات تحفيظ أونلاين للأطفال والكبار، إجازات قرآنية، أحاديث، عقيدة، وسيرة نبوية.",
   applicationName: "أكاديمية بداية",
   authors: [
     { name: "الشيخ عبد الله جلال", url: SITE_URL },
@@ -28,16 +28,20 @@ export const metadata: Metadata = {
   ],
   generator: "Next.js",
   keywords: [
+    "الشيخ عبد الله جلال",
+    "الشيخ عبدالله جلال",
+    "عبد الله جلال",
+    "عبدالله جلال",
+    "أكاديمية الشيخ عبد الله جلال",
+    "أكاديمية الشيخ عبدالله جلال",
+    "اكاديمية الشيخ عبدالله جلال",
+    "اكاديميه الشيخ عبدالله جلال",
     "أكاديمية بداية",
     "اكاديمية بداية",
     "اكاديميه بدايه",
     "أكاديمية بداية لتحفيظ القرآن الكريم",
     "أكاديمية بداية الشيخ عبدالله جلال",
     "أكاديمية بداية الشيخ عبد الله جلال",
-    "الشيخ عبد الله جلال",
-    "الشيخ عبدالله جلال",
-    "عبد الله جلال",
-    "عبدالله جلال",
     "تحفيظ القرآن الكريم",
     "تحفيظ قرآن",
     "تحفيظ قرآن أون لاين",
@@ -55,6 +59,7 @@ export const metadata: Metadata = {
     "السيرة النبوية للأطفال والكبار",
     "أذكار الصباح والمساء",
     "Bidaya Academy",
+    "Sheikh Abdullah Galal",
     "Quran Memorization Academy",
   ],
   creator: "أكاديمية بداية",
@@ -72,7 +77,7 @@ export const metadata: Metadata = {
     locale: "ar_EG",
     alternateLocale: ["ar_SA", "ar_AE"],
     url: SITE_URL,
-    title: "أكاديمية بداية لتحفيظ القرآن الكريم | بإشراف الشيخ عبد الله جلال",
+    title: "أكاديمية بداية لتحفيظ القرآن الكريم | الشيخ عبد الله جلال",
     description:
       "صرح تعليمي قرآني رائد في تحفيظ القرآن الكريم وتعليم أحكام التجويد والعلوم الإسلامية لجميع الأعمار بإشراف الشيخ عبد الله جلال.",
     siteName: "أكاديمية بداية",
@@ -87,7 +92,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "أكاديمية بداية لتحفيظ القرآن الكريم | بإشراف الشيخ عبد الله جلال",
+    title: "أكاديمية بداية لتحفيظ القرآن الكريم | الشيخ عبد الله جلال",
     description:
       "تحفيظ القرآن الكريم وتعليم التجويد والعلوم الشرعية للأطفال والكبار بإشراف الشيخ عبد الله جلال.",
     images: ["/bedaya.jpeg"],
@@ -106,8 +111,10 @@ export const metadata: Metadata = {
   },
   category: "Education",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: [
+      { url: "/bedaya.jpeg", type: "image/jpeg" },
+    ],
+    shortcut: "/bedaya.jpeg",
     apple: "/bedaya.jpeg",
   },
   verification: {
@@ -123,6 +130,14 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
+        {/* Google Site Name tags */}
+        <meta name="site_name" content="أكاديمية بداية" />
+        <meta property="og:site_name" content="أكاديمية بداية" />
+        <meta name="application-name" content="أكاديمية بداية" />
+        {/* Favicon / Brand Icon */}
+        <link rel="icon" href="/bedaya.jpeg" type="image/jpeg" sizes="any" />
+        <link rel="shortcut icon" href="/bedaya.jpeg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/bedaya.jpeg" />
         <JsonLd />
       </head>
       <body className="antialiased">
